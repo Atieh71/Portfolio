@@ -1,0 +1,291 @@
+body{
+    font-family:"Montserrat-black";
+    font-size: 1.2rem;
+    text-align: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 5vh 2vh;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.light{
+    background-color:#fff;
+    color:#0e2954d0;
+}
+
+.dark{
+    background-color:#0e2954d0;
+    color: #fff;
+}
+
+.hidden{
+opacity: 0;
+filter: blur(5px);
+transition: all 2s;
+}
+
+.show{
+opacity: 1;
+filter: blur(0);
+}
+
+.up{
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 2s;
+    overflow: hidden;
+
+}
+
+.upToDown{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.down{
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 2s;
+}
+
+.downToUp{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+h2{
+margin: 2vh auto 10vh;
+}
+
+.socialIcons{
+    font-size:2rem
+} 
+
+                                             /* navbar section  */
+#navBar{
+    padding: 3vh 3vh;
+    font-weight: bold;
+}
+.navbar-brand{
+    font-family:"Montserrat-Black";
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+                                             /* title section */
+#title{
+    padding: 3vh 3vh;
+    box-sizing: border-box;
+    background-image: url("Images/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.subTitle h1{
+    font-family:"Montserrat-Black";
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.5 ;
+    text-align: justify;
+    backdrop-filter: brightness(70%);
+    padding: 2%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 4%;
+}
+
+.subTitle img{
+    width:60%;
+    border-radius: 100%;
+    margin-top: 0;
+
+}
+
+
+                                            /* education section */
+#education{
+    background-image: url("Images/5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.studyDocParent{
+    margin-bottom: 10vh;
+}
+.studyDoc{
+    width:40%;
+    padding: 1vh 1vh;
+    box-sizing: border-box;
+    margin-top: 2vh;
+    border-radius: 10px;
+}
+
+.studyDoc:nth-child(1){
+    margin-left: 10%;
+    transition-delay: 200ms;
+}
+
+.studyDoc:nth-child(2){
+    margin-left: 30%;
+    transition-delay: 400ms;
+}
+
+.studyDoc:nth-child(3){
+    margin-left: 50%;
+    transition-delay: 600ms;
+}
+#education .studyDocParent .studyDoc{
+    background-color: #ffffffae;
+}
+
+
+                                                  /* experiences section */
+.expDocParent{
+    margin-bottom: 10vh;
+}
+.expDoc{
+    background-image: url("Images/6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width:40%;
+    padding: 1vh 1vh;
+    box-sizing: border-box;
+    margin-top: 2vh;
+    border-radius: 10px;
+}
+.leftExp{
+    margin-left: 10%;
+    transition-delay: 200ms;
+}
+
+
+.rightExp{    
+    margin-left: 50%;
+    transition-delay: 600ms;
+}
+
+.expDocParent:nth-child(1){
+    transition-delay: 200ms;
+}
+
+.expDocParent:nth-child(2){
+    transition-delay: 400ms;
+}
+
+.expDocParent:nth-child(3){
+    transition-delay: 600ms;
+}
+
+                                               /* skills section */
+#skills{
+    background-image: url("Images/3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.divSkill{
+    border: 2px solid #0e2954b9 ;
+    padding: 1% 2%;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 42.5%;
+    margin: 1vh 2vh;
+    backdrop-filter: brightness(106%);
+    border-radius: 10px;
+}
+
+
+                                                   /* footer section*/
+
+.footerIcons{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 10vh auto 5vh;
+}
+.socialIconsFooter{
+    color: #fff;
+} 
+.socialIconsFooter:nth-child(1){
+    transition-delay: 200ms;
+}
+
+.socialIconsFooter:nth-child(2){
+    transition-delay: 400ms;
+}
+
+.socialIconsFooter:nth-child(3){
+    transition-delay: 600ms;
+}
+
+.socialIconsFooter:nth-child(4){
+    transition-delay: 800ms;
+} 
+
+
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
+}
+@media screen and (max-width: 1222px) {
+
+    .divSkill {
+
+    width:100%;
+    margin:2vh auto;
+
+  } 
+}
+
+@media screen and (max-width: 744px) {
+
+   .expDoc , .studyDoc {
+    width: 70%;
+
+  } 
+  .studyDoc:nth-child(1){
+    margin-left: 10%;
+}
+
+.studyDoc:nth-child(2){
+    margin-left: 20%;
+}
+
+.studyDoc:nth-child(3){
+    margin-left: 30%;
+
+}
+.leftExp{
+    margin-left: 10%;
+}
+
+
+.rightExp{    
+    margin-left: 30%;
+}
+
+}
+
+
+@media screen and (max-width: 1460px) and (min-width: 767px) {
+
+    .subTitle img {
+        width: 80%;
+  } 
+
+}
+@media screen and (max-width: 767px){
+    .subTitle h1{
+        font-size: 1.5rem;
+    }
+}
